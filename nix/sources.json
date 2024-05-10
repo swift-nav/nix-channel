@@ -1,4 +1,16 @@
 {
+    "badgerd-sdwirec": {
+        "branch": "main",
+        "description": "Our way of re-creating sdwire of Tizen. Checkout our website to get one yourself: https://www.badgerd.nl/sdwirec/",
+        "homepage": null,
+        "owner": "Badger-Embedded",
+        "repo": "badgerd-sdwirec",
+        "rev": "0ede9c272550ecff5675a2e1af7cb6566bca048e",
+        "sha256": "1d72kfg05v3y5zd706nb2v2byj8cg3f9rzk6b51drxblzfbz03fk",
+        "type": "tarball",
+        "url": "https://github.com/Badger-Embedded/badgerd-sdwirec/archive/0ede9c272550ecff5675a2e1af7cb6566bca048e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "master",
         "description": "Nix Packages collection",
