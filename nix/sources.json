@@ -1,8 +1,8 @@
 {
     "badgerd-sdwirec": {
         "branch": "main",
-        "description": "Our way of re-creating sdwire of Tizen. Checkout our website to get one yourself: https://www.badgerd.nl/sdwirec/",
-        "homepage": null,
+        "description": "Re-implementation of Tizen's sdwire by Badgerd.",
+        "homepage": "https://www.badgerd.nl/sdwirec/",
         "owner": "Badger-Embedded",
         "repo": "badgerd-sdwirec",
         "rev": "0ede9c272550ecff5675a2e1af7cb6566bca048e",
