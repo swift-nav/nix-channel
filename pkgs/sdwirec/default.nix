@@ -1,4 +1,4 @@
-{}:
+{ pkgs }:
 
 stdenv.mkDerivation {
   pname = "sdwirec";
