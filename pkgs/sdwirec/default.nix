@@ -1,4 +1,4 @@
-{ stdenv, fetchgit, libftdi1, cmake, sdwirec }:
+{ stdenv, fetchgit, libftdi1, cmake, pkg-config, sdwirec }:
 
 stdenv.mkDerivation rec {
   pname = "sdwirec";
@@ -12,12 +12,13 @@ stdenv.mkDerivation rec {
   buildInputs = [
     libftdi1
     cmake
+    pkg-config
   ];
 
   configurePhase = ''
-    echo "$(pwd)"
+    echo "CWD is '$(pwd)'"
     mkdir build
-    cmake -B build -S . --log-level=VERBOSE
+    cmake -B build -S .
   '';
 
   # change the pwd to the directory where the makefile is located
