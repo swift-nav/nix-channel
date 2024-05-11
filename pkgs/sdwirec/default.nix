@@ -3,7 +3,7 @@
 stdenv.mkDerivation rec {
   pname = "sdwirec";
   version = "1.3.0";
-  src = fetchgit {
+  src = fetchGit {
     url = "https://github.com/Badger-Embedded/badgerd-sdwirec";
     name = "sdwirec-sw";
     rev = "${sdwirec.rev}";
