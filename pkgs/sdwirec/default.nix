@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
     url = "git@github.com:Badger-Embedded/badgerd-sdwirec.git";
     rev = "${sdwirec.rev}";
   };
-  sourceRoot = "sdwirec-sw";
+  sourceRoot = "source/sdwirec-sw";
 
   buildInputs = [
     libftdi1
