@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     echo "CWD is '$(pwd)'"
     mkdir -p $out/bin
-    cp build/source/sdwirec-sw/build/src/sd-mux-ctrl $out/bin
+    cp src/sd-mux-ctrl $out/bin
   '';
 
   # installCheck is skipped by default (i.e. doInstallCheck = false)
