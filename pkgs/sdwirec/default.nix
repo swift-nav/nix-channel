@@ -7,7 +7,6 @@ stdenv.mkDerivation rec {
     url = "git@github.com:Badger-Embedded/badgerd-sdwirec.git";
     name = "sdwirec-sw";
     rev = "${sdwirec.rev}";
-    sha256 = "${sdwirec.sha256}";
   };
 
   buildInputs = [
