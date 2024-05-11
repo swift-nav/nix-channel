@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   configurePhase = ''
     mkdir build
-    cmake
+    cmake -B build
   '';
 
   # change the pwd to the directory where the makefile is located
