@@ -1,4 +1,4 @@
-{ stdenv, fetchgit, libftdi1, cmake, pkg-config, sdwirec }:
+{ stdenv, fetchgit, libftdi1, cmake, pkg-config, popt, sdwirec }:
 
 stdenv.mkDerivation rec {
   pname = "sdwirec";
@@ -13,6 +13,7 @@ stdenv.mkDerivation rec {
     libftdi1
     cmake
     pkg-config
+    popt
   ];
 
   configurePhase = ''
