@@ -2,7 +2,13 @@ let
   sources = import ./nix/sources.nix;
 
 in
-  { pkgs ? sources.nixpkgs, sdwirec ? sources.badgerd-sdwirec }:
+  {
+    pkgs ? import (fetchTarball {
+      url = "${sources.nixpkgs.url}";
+      sha256 = "${sources.nixpkgs.sha256}";
+    }) {},
+    sdwirec ? sources.badgerd-sdwirec
+  }:
 
   with pkgs;
 
