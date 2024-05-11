@@ -14,7 +14,9 @@ in
 
   let
     packages = rec {
-      sd-mux-ctrl = callPackage ./pkgs/sdwirec {};
+      sd-mux-ctrl = callPackage ./pkgs/sdwirec { sdwirec = sdwirec; };
+
+      inherit pkgs;
     };
 
   in
