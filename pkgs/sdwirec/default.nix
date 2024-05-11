@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   # /usr/bin or /usr/local/bin instead of $out/bin)
   installPhase = ''
     mkdir -p $out/bin
-    cp build/source/sd-mux-ctrl $out/bin
+    cp build/source/sdwirec-sw/build/src/sd-mux-ctrl $out/bin
   '';
 
   # installCheck is skipped by default (i.e. doInstallCheck = false)
