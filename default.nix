@@ -2,13 +2,13 @@ let
   sources = import ./nix/sources.nix;
 
 in
-  { pkgs ? sources.nixpkgs }:
+  { pkgs ? sources.nixpkgs, sdwirec ? sources.badgerd-sdwirec }:
 
   with pkgs;
 
   let
     packages = rec {
-      sdwirec = callPackage ./pkgs/sdwirec {};
+      sd-mux-ctrl = callPackage ./pkgs/sdwirec {};
     };
 
   in
