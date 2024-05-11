@@ -36,6 +36,7 @@ stdenv.mkDerivation rec {
   # assumes a standard Linux distribution (i.e. it would try to install to
   # /usr/bin or /usr/local/bin instead of $out/bin)
   installPhase = ''
+    echo "CWD is '$(pwd)'"
     mkdir -p $out/bin
     cp build/source/sdwirec-sw/build/src/sd-mux-ctrl $out/bin
   '';
