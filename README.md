@@ -4,7 +4,7 @@ sensitive information!
 
 # Swift Nix Channel
 
-This repository contains the Nix expressions. providing
+This repository contains the Nix expressions providing
 packages used at Swift Navigation that are otherwise not available in `nixpkgs`.
 
 ## Usage
